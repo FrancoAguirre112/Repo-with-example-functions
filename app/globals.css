@@ -25,3 +25,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+button {
+  @apply py-2 rounded-lg px-5 bg-white text-black hover:scale-95 transition-transform; 
+}
+
+div {
+  @apply flex flex-col items-center
+}
+
+div h2 {
+  @apply font-semibold text-xl underline
+}
