@@ -43,7 +43,10 @@ export const deleteDBData = async (tableName, columnName, columnValue) => {
   console.log("Deletion successful");
 };
 
-//Returns related data from one table (fromTable)
+// Returns related data from one table (fromTable) based on a specified value (fromValueName) in the "name" column.
+// It selects all columns from the specified table (selectedTable) and additional data specified in selectedData,
+// where the value in the "name" column matches the provided fromValueName.
+// If successful, it returns the retrieved data; otherwise, it throws an error.
 export const readRelatedData = async (
   fromTable,
   fromValueName,
